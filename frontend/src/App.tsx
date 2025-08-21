@@ -2,6 +2,7 @@ import { useState, useEffect, type FormEvent } from "react";
 import MessageList from "./components/messageList";
 import Input from "./components/input";
 import { useSocket } from "./context/SocketContext";
+import Sidebar from "./components/Sidebar";
 
 export default function App() {
   const [open, setOpen] = useState(false);
@@ -25,7 +26,9 @@ export default function App() {
   }, []);
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex h-screen justify-between">
+      <Sidebar />
+    <div className="flex flex-col h-screen flex-1">
       {/* Header */}
       <div className="p-4 bg-blue-600 text-white font-bold text-lg">
         Chat App 🚀
@@ -68,6 +71,7 @@ export default function App() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }

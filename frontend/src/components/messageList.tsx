@@ -33,8 +33,8 @@ export default function MessageList() {
             <div
               className={`max-w-xs px-4 py-2 rounded-xl shadow ${
                 isOwnMessage
-                  ? "bg-gray-200 text-black text-right"
-                  : "bg-blue-500 text-white text-left"
+                  ? "bg-blue-500 text-white text-right"
+                  : "bg-gray-200 text-black text-left"
               }`}
             >
               <div className="text-xs opacity-70">
