@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { io, Socket } from "socket.io-client";
 
-const SOCKET_URL = 'http://localhost:3000';
+const SOCKET_URL = 'https://6c938ab0057c.ngrok-free.app';
 
 interface SocketContextType {
     socket: Socket | null;
